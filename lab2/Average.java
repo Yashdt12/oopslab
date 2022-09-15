@@ -1,19 +1,19 @@
 import java.util.Scanner;
 class Average
 {
-    private float a,b,average;
-    public void getValue()
+    double a,b,average;
+    void getValue()
 	{
 		System.out.print("Enter two numbers: ");
 		Scanner sc=new Scanner(System.in);
-		a=sc.nextFloat();
-		b=sc.nextFloat();
+		a=sc.nextDouble();
+		b=sc.nextDouble();
 	}
-    public void average()
+    void average()
     {
         average=(a+b)/2;
     }
-    public void show()
+    void show()
     {
         System.out.println("Average is: "+average);
     }
