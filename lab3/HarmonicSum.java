@@ -7,7 +7,7 @@ class HarmonicSum
         for(int i=1;i<=n;i++)
             lrsum=lrsum+1.0/i;
         System.out.println("Sum uptil "+n+" terms left to right is "+lrsum);
-        for(int i=1;i<=n;i++)
+        for(int i=n;i>0;i--)
             rlsum=rlsum+1.0/i;
         System.out.println("Sum uptil "+n+" terms left to right is "+rlsum);
         System.out.println("Difference between sum from left and right is: "+(lrsum-rlsum));

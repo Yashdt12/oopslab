@@ -1,5 +1,6 @@
 import java.util.Scanner;
-class Add{
+class Add
+{
 	int a,b,sum;
 	void getValue()
 	{
