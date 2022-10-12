@@ -7,7 +7,7 @@ class Add
     {
         InputStreamReader isr=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(isr);
-        System.out.println("Enter 10 numbers: ");
+        System.out.print("Enter 10 numbers: ");
         n1=Integer.parseInt(br.readLine());
         n2=Integer.parseInt(br.readLine());
         n3=Integer.parseInt(br.readLine());
