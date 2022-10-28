@@ -15,7 +15,7 @@ class Test{
         }
     }
     public static void main(String args[]){
-        int n=10; // Number of students
+        int n=3; // Number of students
         for(int i=0;i<n;i++){
             StudentList.addStudent(readStudent());
         }

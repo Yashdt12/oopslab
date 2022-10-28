@@ -9,12 +9,12 @@ public class TestPokemon{
         return pokemon;
     }
     private static void printPokemonList(Pokemon[] pl){
-        for(int i=0;i<pl.length;i++){
+        for(int i=0;pl[i]!=null;i++){
             System.out.println(pl[i].getPokemon());
         }
     }
     public static void main(String[] args){
-        int n=15; // Number of pokemons
+        int n=2; // Number of pokemons
         for(int i=0;i<n;i++){
             Trainer.capturePokemon(readPokemon());
         }

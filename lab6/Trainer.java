@@ -9,7 +9,7 @@ public class Trainer{
         Pokemon[] pokemonList=new Pokemon[10];
         int count=0;
         for(int i=0;i<collection.size();i++){
-            if(collection.elementAt(i).getPokemon().getType().equals(type)){
+            if(collection.elementAt(i).getPokemon().getType().equalsIgnoreCase(type)){
                 pokemonList[count]=collection.elementAt(i).getPokemon();
                 count++;
             }
@@ -23,7 +23,7 @@ public class Trainer{
         Pokemon[] pokemonList=new Pokemon[10];
         int count=0;
         for(int i=0;i<collection.size();i++){
-            for(int j=0;i<types.length;i++){
+            for(int j=0;j<types.length;j++){
                 if(types[j].equals(collection.elementAt(i).getPokemon().getType())){
                     pokemonList[count]=collection.elementAt(i).getPokemon();
                     count++;
