@@ -34,9 +34,12 @@ public class Assignment2{
 		for(int i=0;i<4;i++){
 			System.out.println(newinfo[i]);
 		}
-		char[] temp=newinfo[0].toCharArray();
+		byte[] temp=newinfo[0].getBytes();
 		Arrays.sort(temp);
-		String sname=String.valueOf(temp).trim();
-		System.out.println("Name after sorting is: "+sname);
+		System.out.print("Name after converting to ascii values and sorting:");
+		for(int i=0;i<len;i++){
+			System.out.print(" "+temp[i]);
+		}
+		System.out.print("\n");
 	}
 }
